@@ -1,20 +1,10 @@
 # hppd.dev
 
-## Build Setup
+[Aumy](https://github.com/aumyf/)'s website built using [Nuxt.js](https://nuxtjs.org/).
 
-```bash
-# install dependencies
-$ npm install
+## It uses ...
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+- [Vue](https://vuejs.org) and [Nuxt](https://nuxtjs.org/)
+  - `@nuxtjs/composition-api`
+- [TypeScript](https://typescriptlang.org)
+- [Tailwind](https://tailwindcss.com)
