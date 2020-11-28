@@ -1,4 +1,6 @@
-export default {
+import type { NuxtConfig } from "@nuxt/types";
+
+const nuxtConfig: NuxtConfig = {
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
 
@@ -33,6 +35,7 @@ export default {
     "@nuxtjs/tailwindcss",
     // https://composition-api.nuxtjs.org
     "@nuxtjs/composition-api",
+    "@nuxtjs/eslint-module",
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -48,3 +51,5 @@ export default {
     },
   },
 };
+
+export default nuxtConfig;

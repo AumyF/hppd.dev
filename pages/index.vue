@@ -1,44 +1,8 @@
 <template>
-  <div class="index-root">
-    <section class="bg-fuchsia-white text-gray-counterblack">
-      <div class="container mx-auto px-8 py-8">
-        <div
-          class="block mx-auto sm:flex flex-row-reverse items-center justify-around mb-6"
-        >
-          <img src="/icon.png" class="h-48 mx-auto sm:mx-0" alt="" />
-          <div class="text-center sm:text-left">
-            <h1 class="text-6xl font-bold leading-none mb-2 tracking-tighter">
-              Aumy
-            </h1>
-            <small class="block text-xl mb-2">A programmer.</small>
-            <div class="w-48 mx-auto">
-              <ExternalLink
-                v-for="icon in icons"
-                :key="icon.label"
-                :icon="icon"
-              />
-              <a href="https://zenn.dev/aumy">Zenn: aumy</a>
-            </div>
-          </div>
-        </div>
-
-        <nav
-          class="mb-8 flex flex-wrap gap-x-4 gap-y-1 tracking-widest justify-center"
-        >
-          <a href="#interests" class="flex gap-1"
-            ><ion-icon name="heart-outline" />HOBBIES and INTERESTS</a
-          >
-          <a href="#profile" class="flex gap-1"
-            ><ion-icon name="person-outline" />HISTORY and PROFILE</a
-          >
-        </nav>
-        <div class="mx-auto w-max-content">
-          <ion-icon name="chevron-down-outline" size="large" />
-        </div>
-      </div>
-    </section>
-    <section id="interests" class="bg-violet-white text-gray-counterblack">
-      <div class="container mx-auto px-8 py-8">
+  <div class="index-root bg-white text-gray-counterwhite">
+    <Hero />
+    <section id="interests">
+      <div class="container mx-auto px-8 my-8">
         <h2>HOBBIES and INTERESTS</h2>
         <ul>
           <li>
@@ -58,7 +22,7 @@
       </div>
     </section>
     <section id="profile" class="bg-white text-gray-counterwhite">
-      <div class="container mx-auto px-8 py-8">
+      <div class="container mx-auto px-8 my-8">
         <h2>HISTORY and PROFILE</h2>
         <p>
           2003 年，横浜市で爆誕．公立小中を経て 2019 年 04
@@ -81,12 +45,13 @@
 
 <script lang="ts">
 import { defineComponent } from "@nuxtjs/composition-api";
-import ExternalLink from "../components/ExternalLink.vue";
+
 import Footer from "../components/Footer.vue";
+import Hero from "../components/Hero.vue";
 
 export default defineComponent({
   name: "App",
-  components: { ExternalLink },
+  components: { Footer, Hero },
   setup() {
     const icons = [
       {
@@ -121,7 +86,11 @@ export default defineComponent({
     @apply list-disc pl-4;
   }
   h2 {
-    @apply font-bold text-3xl tracking-tight;
+    @apply font-bold text-3xl tracking-tight mb-2 flex;
+    &::after {
+      @apply border-b border-gray-counterwhite h-0 my-auto ml-4 flex-grow;
+      content: "";
+    }
   }
   h3 {
     @apply font-bold text-xl;
