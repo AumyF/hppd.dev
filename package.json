@@ -13,7 +13,7 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/composition-api": "^0.16.4",
-    "core-js": "^3.8.0",
+    "core-js": "^3.8.1",
     "nuxt": "^2.14.11",
     "postcss-nested": "^4.2.3"
   },
