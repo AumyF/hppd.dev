@@ -7,13 +7,5 @@ updates:
     interval: daily
     time: '00:00'
   open-pull-requests-limit: 99
-  reviewers:
-    - aumyf
-  assignees:
-    - aumyf
   labels:
     - dependencies
-  commit-message:
-    prefix: fix
-    prefix-development: chore
-    include: scope
