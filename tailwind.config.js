@@ -9,16 +9,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        fuchsia: {
-          white: "hsl(342deg, 60%, 40%)",
-          counterblack: "hsl(342deg, 80%, 75%)",
-        },
-        violet: {
-          white: "hsl(249.4, 39%, 44%)",
-        },
+        link: "#B794F4",
         gray: {
-          counterwhite: "hsl(0, 0%, 20%)",
-          counterblack: "hsl(0, 0%, 97.5%)",
+          50: "#F9F9FD",
+          100: "#F0F1F8",
+          200: "#E7E6F1",
+          300: "#D2D3E3",
+          400: "#ABAAC3",
+          500: "#7F7C9A",
+          600: "#55516A",
+          700: "#37344A",
+          800: "#211E2D",
+          900: "#1a1723",
         },
       },
       width: {

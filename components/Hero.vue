@@ -1,6 +1,6 @@
 <template>
   <section class="">
-    <div class="container mx-auto px-8 my-8">
+    <div class="container mx-auto pb-8 pt-8">
       <div
         class="block mx-auto sm:flex flex-row-reverse items-center justify-around mb-6"
       >
@@ -10,7 +10,7 @@
             Aumy
           </h1>
           <small class="block text-xl mb-2">A programmer.</small>
-          <div class="w-48 mx-auto">
+          <div class="w-48 mx-auto text-link">
             <ExternalLink
               v-for="icon in icons"
               :key="icon.label"

@@ -1,8 +1,8 @@
 <template>
-  <div class="index-root bg-white text-gray-counterwhite">
+  <div class="index-root bg-gray-900 text-gray-300">
     <Hero />
-    <section id="interests">
-      <div class="container mx-auto px-8 my-8">
+    <section id="interests" class="py-8">
+      <div class="container mx-auto px-8">
         <h2>HOBBIES and INTERESTS</h2>
         <ul>
           <li>
@@ -21,8 +21,8 @@
         </ul>
       </div>
     </section>
-    <section id="profile" class="bg-white text-gray-counterwhite">
-      <div class="container mx-auto px-8 my-8">
+    <section id="profile" class="py-8">
+      <div class="container mx-auto px-8">
         <h2>HISTORY and PROFILE</h2>
         <p>
           2003 年，横浜市で爆誕．公立小中を経て 2019 年 04
@@ -31,12 +31,9 @@
           が最初のプログラミング． 中学時代には Windows ラップトップを Ubuntu
           とのデュアルブートにしたり，grub rescue
           と格闘したりした．高校に入ってからは TypeScript と React
-          に打ち込んでいる．
+          を学び，型システムの面白さを知る．
         </p>
-        <p>
-          新しもの好きでかつ飽きやすいにもかかわらず，Twitter
-          を控えることはできないようだ．
-        </p>
+        <p>静的型付け，関数型プログラミング．</p>
       </div>
     </section>
     <Footer />
@@ -88,7 +85,7 @@ export default defineComponent({
   h2 {
     @apply font-bold text-3xl tracking-tight mb-2 flex;
     &::after {
-      @apply border-b border-gray-counterwhite h-0 my-auto ml-4 flex-grow;
+      @apply border-b border-gray-600 h-0 my-auto ml-4 flex-grow;
       content: "";
     }
   }
