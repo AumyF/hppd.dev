@@ -15,7 +15,7 @@
   "dependencies": {},
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.2.0",
-    "@emotion/react": "^11.1.4",
+    "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
