@@ -28,7 +28,7 @@
     "@types/react-helmet": "^6.1.1",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.20.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "@xstyled/emotion": "^2.2.2",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.2.0",
