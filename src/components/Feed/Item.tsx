@@ -31,12 +31,12 @@ export namespace FeedItem {
         css={css`
           display: flex;
           flex-direction: column;
+          line-height: 1.5;
         `}
       >
-        <h2
+        <h3
           css={css`
-            font-size: 1.2rem;
-            line-height: 1.2;
+            font-size: 1.1rem;
             margin-bottom: 0;
           `}
         >
@@ -51,7 +51,7 @@ export namespace FeedItem {
           >
             {title}
           </a>
-        </h2>
+        </h3>
         <time>{isoDate.split("T")[0]}</time>
 
         <small

@@ -1,6 +1,7 @@
 import { css } from "@emotion/react";
 
 import { borderBox } from "../styles/layout";
+import { mediaQuery } from "../styles/screen";
 import { family, featureSettings, webFont } from "../styles/text";
 import { variables } from "../styles/variables";
 
@@ -36,6 +37,7 @@ export const Globals = [
       font-size: 1.875rem;
       margin-bottom: 0.5rem;
       display: flex;
+      flex-direction: column;
       &::after {
         border-bottom-width: 1px;
         border-bottom-color: var(--color-border);
@@ -43,9 +45,29 @@ export const Globals = [
         height: 0;
         margin-top: auto;
         margin-bottom: auto;
-        margin-left: 1rem;
+        margin-left: 0rem;
         flex-grow: 1;
         content: "";
+      }
+    }
+    ${mediaQuery("sm")} {
+      h2 {
+        font-weight: 700;
+        font-size: 1.875rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        &::after {
+          border-bottom-width: 1px;
+          border-bottom-color: var(--color-border);
+          border-bottom-style: solid;
+          height: 0;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 1rem;
+          flex-grow: 1;
+          content: "";
+        }
       }
     }
     h3 {
