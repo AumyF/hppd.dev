@@ -21,7 +21,7 @@ module.exports = {
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:typescript-sort-keys/recommended",
-    "prettier/@typescript-eslint",
+    "prettier",
   ],
   ignorePatterns: ["*.js", "nuxt.config.ts"],
   // add your custom rules here
