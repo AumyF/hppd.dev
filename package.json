@@ -12,7 +12,6 @@
     "start": "npm run develop",
     "tsc": "tsc"
   },
-  "dependencies": {},
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.2.0",
     "@emotion/react": "^11.1.5",
